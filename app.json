@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "primeiro_projeto",
-    "slug": "primeiro_projeto",
+    "slug": "primeiroprojeto",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.italoconceicao.primeiroprojeto"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f3680956-64ea-446f-94d5-9ce228a6e837"
+      }
+    },
+    "owner": "italoconceicao"
   }
 }
