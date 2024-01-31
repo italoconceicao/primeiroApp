@@ -1,20 +1,56 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity, FlatList } from 'react-native'
 import { Header } from '../../components/Header'
+import { useNavigation } from '@react-navigation/native'
 
-// export default function Home() {
-//     return (
-//         <View style={{ flex: 1, paddingVertical: 35, backgroundColor: '#FFF' }} >
-
-//             <Header />
-//         </View>
-//     )
-// }
+const DATA = [
+    {
+        id: 1,
+        name: 'Listas',
+        routeName: 'Lists',
+    },
+    {
+        id: 2,
+        name: 'Icones',
+        routeName: 'Icons',
+    },
+    // {
+    //     id: 3,
+    //     name: 'Mapa',
+    //     routeName: 'Map',
+    // }
+]
 
 export default function Home() {
+    const { navigate } = useNavigation();
     return (
-        <View style={{ flex: 1, paddingVertical: 35 }}>
-            <Header />
-            {/* <Text> Seja bem vindo ao app! </Text> */}
-        </View>
+        <View style={{ flex: 1, paddingVertical: 60, paddingLeft: 10 }}>
+            <FlatList
+                data={DATA /* array de informações da lista */}
+                numColumns={2} /*exige o marginHorizontal*/
+                renderItem={({ item, index }) => (
+                    <TouchableOpacity
+                        activeOpacity={0.6}
+                        onPress={() => {
+                            navigate(item.routeName)
+                        }}
+
+                        style={{
+                            width: 100,
+                            height: 100,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            marginHorizontal: 10,
+                            borderRadius: 10,
+                            backgroundColor: '#1E90FF'
+                        }}>
+                        <Text style={{ color: '#FFF' }}> {item.name} </Text>
+                    </TouchableOpacity>
+                )
+                }
+                keyExtractor={(item) => item.id}
+            />
+
+
+        </View >
     );
 }

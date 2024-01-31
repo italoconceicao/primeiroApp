@@ -1,12 +1,27 @@
 // import { StatusBar } from 'expo-status-bar';
 // import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from "./src/screens/home"
+import { Lists } from "./src/screens/Lists";
 
-import { List } from "./src/screens/Lists";
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  return <Home />
-  // return <Home />
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Home' component={Home} options={{ headerShown: true, headerTitle: 'Seja bem-vindo' }} />
+        <Stack.Screen name='Lists' component={Lists} />
+        {/* <Stack.Screen name='Icons' component={Icons} /> */}
+
+      </Stack.Navigator>
+    </NavigationContainer >
+
+
+
+    // <Home />
+  )
 
   // return (
   //   <View style={styles.container}>

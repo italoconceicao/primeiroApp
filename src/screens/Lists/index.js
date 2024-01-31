@@ -83,7 +83,7 @@ const DATA = [
     },
 ];
 
-export const List = () => {
+export const Lists = () => {
     return (
         <View style={{ flex: 1, paddingVertical: 60, paddingLeft: 10 }}>
             <FlatList
