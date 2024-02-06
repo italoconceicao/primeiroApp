@@ -13,11 +13,11 @@ const DATA = [
         name: 'Icones',
         routeName: 'Icons',
     },
-    // {
-    //     id: 3,
-    //     name: 'Mapa',
-    //     routeName: 'Map',
-    // }
+    {
+        id: 3,
+        name: 'Mapa',
+        routeName: 'Map',
+    }
 ]
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <View style={{ flex: 1, paddingVertical: 60, paddingLeft: 10 }}>
             <FlatList
                 data={DATA /* array de informações da lista */}
-                numColumns={2} /*exige o marginHorizontal*/
+                numColumns={3} /*exige o marginHorizontal*/
                 renderItem={({ item, index }) => (
                     <TouchableOpacity
                         activeOpacity={0.6}
