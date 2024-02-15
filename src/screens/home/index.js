@@ -17,6 +17,16 @@ const DATA = [
         id: 3,
         name: 'Mapa',
         routeName: 'Map',
+    },
+    {
+        id: 4,
+        name: 'Lottie',
+        routeName: 'Lottie',
+    },
+    {
+        id: 5,
+        name: 'Animations',
+        routeName: 'Animations',
     }
 ]
 
@@ -39,7 +49,7 @@ export default function Home() {
                             height: 100,
                             alignItems: 'center',
                             justifyContent: 'center',
-                            marginHorizontal: 10,
+                            margin: 10,
                             borderRadius: 10,
                             backgroundColor: '#1E90FF'
                         }}>
