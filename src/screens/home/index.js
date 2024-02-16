@@ -27,6 +27,11 @@ const DATA = [
         id: 5,
         name: 'Animations',
         routeName: 'Animations',
+    },
+    {
+        id: 6,
+        name: 'Images',
+        routeName: 'Images',
     }
 ]
 
