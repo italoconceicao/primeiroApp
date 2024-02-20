@@ -25,13 +25,18 @@ const DATA = [
     },
     {
         id: 5,
-        name: 'Animations',
+        name: 'Animações',
         routeName: 'Animations',
     },
     {
         id: 6,
-        name: 'Images',
+        name: 'Imagens',
         routeName: 'Images',
+    },
+    {
+        id: 7,
+        name: 'Notificações',
+        routeName: 'LocalNotification',
     }
 ]
 
@@ -54,7 +59,7 @@ export default function Home() {
                             height: 100,
                             alignItems: 'center',
                             justifyContent: 'center',
-                            margin: 10,
+                            margin: 5,
                             borderRadius: 10,
                             backgroundColor: '#1E90FF'
                         }}>
