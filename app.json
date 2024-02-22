@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "primeiro_projeto",
-    "slug": "primeiroprojeto",
+    "name": "Iniciando React Native",
+    "slug": "iniciando-react-native",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -14,14 +14,22 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "runtimeVersion": "1.0.0",
+    "jsEngine": "hermes",
+    "sdkVersion": "1.0.0",
+    "androidStatusBar": {
+      "hidden": "false"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "runtimeVersion": "1.0.0",
       "package": "com.italoconceicao.primeiroprojeto"
     },
     "web": {
@@ -32,6 +40,19 @@
         "projectId": "f3680956-64ea-446f-94d5-9ce228a6e837"
       }
     },
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": [
+      "expo-image-picker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
     "owner": "italoconceicao"
   }
 }
