@@ -13,11 +13,12 @@ const DATA = [
         name: 'Icones',
         routeName: 'Icons',
     },
-    {
-        id: 3,
-        name: 'Mapa',
-        routeName: 'Map',
-    },
+    // SERÁ IMPLEMENTADO EM OUTRO MOMENTO: 
+    // {
+    //     id: 3,
+    //     name: 'Mapa',
+    //     routeName: 'Map',
+    // },
     {
         id: 4,
         name: 'Lottie',

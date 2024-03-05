@@ -16,7 +16,9 @@
     ],
     "runtimeVersion": "1.0.0",
     "jsEngine": "hermes",
-    "sdkVersion": "1.0.0",
+    "notification": {
+      "color": "#999"
+    },
     "androidStatusBar": {
       "hidden": "false"
     },
